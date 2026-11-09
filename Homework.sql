@@ -29,3 +29,4 @@ GROUP BY s.id, s.name;
 -- 10. Get the names of all statuses, sorted by the status with most tasks first.
 SELECT s.name AS status_name, COUNT(t.id) AS task_count FROM status s LEFT JOIN task t ON s.id = t.status_id 
 GROUP BY s.id, s.name ORDER BY task_count DESC;
+-- Homework SQL Queries
